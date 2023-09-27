@@ -1,0 +1,33 @@
+@import "./color-palette.css";
+
+@font-face {
+  font-family: "SportsJersey";
+  src: url('../fonts/sports_jersey/sportsjersey.ttf') format('truetype');
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: ; */
+  color: #ffffff;
+  /* font-family: ; */
+  font-size: 1.6rem;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
