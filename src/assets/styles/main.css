@@ -1,5 +1,7 @@
 @import "./color-palette.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 @font-face {
   font-family: "SportsJersey";
   src: url('../fonts/sports_jersey/sportsjersey.ttf') format('truetype');
@@ -19,7 +21,6 @@ html {
 }
 
 body {
-  /* background-color: ; */
   color: #ffffff;
   /* font-family: ; */
   font-size: 1.6rem;
@@ -27,7 +28,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../../../public/img/scattered-forcefields.png');
+  background-position: center;
+  background-size: 100%;
+  font-family: 'Lato', sans-serif;
 }
-
-
-

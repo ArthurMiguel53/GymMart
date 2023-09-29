@@ -19,7 +19,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 library.add(faDumbbell);
 
-import { gsap, TweenMax } from 'gsap';
+import { gsap } from 'gsap';
 
 export default defineComponent({
     name: 'BrandLogo',
