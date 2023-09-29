@@ -1,0 +1,34 @@
+{
+    "shortcuts": [
+        {
+            "id": 1,
+            "name": "Ganho de Massa",
+            "link": "/Ganho de Massa"
+        },
+        {
+            "id": 2,
+            "name": "Perda de Gordura",
+            "link": "/Perda de Gordura"
+        },
+        {
+            "id": 3,
+            "name": "Pré Treinos",
+            "link": "/Pré Treinos"
+        },
+        {
+            "id": 4,
+            "name": "Suplementos",
+            "link": "/Suplementos"
+        },
+        {
+            "id": 5,
+            "name": "Acessórios",
+            "link": "/Acessórios"
+        },
+        {
+            "id": 6,
+            "name": "Central De Ajuda",
+            "link": "/Central De Ajuda"
+        }
+    ]
+}
