@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <div id="logo"><img src="" alt="logo e nome"></div>
+    <div id="logo"><img src="" alt="logo and name"></div>
     <div id="categories">
       <h5>Ganho de Massa</h5>
       <h5>Perda de Gordura</h5>
