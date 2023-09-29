@@ -1,0 +1,63 @@
+button {
+  align-items: center;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 14px 56px -11px var(--accent-color);
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: clamp(12px, 4vw, 14px);
+  letter-spacing: 0.3em;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+button:after {
+  background: var(--highlight-color);
+  content: " ";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transition: all 0.4s ease-in-out;
+  width: 0%;
+}
+
+button:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+button span {
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: bolder;
+  letter-spacing: 0.3em;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  z-index: 20;
+}
+
+button:hover span {
+  animation: scaleUp 0.3s ease-in-out;
+  color: var(--primary-color);
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
