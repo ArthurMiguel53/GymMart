@@ -17,7 +17,7 @@
 }
 
 .product-card-container::before {
-    background-color: var(--highlight-color);
+    background-color: var(--light-blue-color);
     border-radius: 50%;
     content: "";
     filter: blur(20px);
@@ -33,7 +33,7 @@
 }
 
 .product-card-container:hover #base-price {
-    color: var(--highlight-color);
+    color: var(--light-blue-color);
 }
 
 .product-card-container:hover #product-name {
@@ -41,7 +41,7 @@
 }
 
 .product-card-container:hover::before {
-    background-color: var(--accent-color);
+    background-color: var(--dark-purple-color);
     opacity: 0.3;
     transform: translateY(70px) scale(0.6);
 }
@@ -86,7 +86,7 @@
 }
 
 .product-card-container #product-name {
-    color: var(--highlight-color);
+    color: var(--light-blue-color);
     font-family: "SportsJersey";
     font-size: clamp(22px, 4vw, 28px);
     letter-spacing: 0.5px;

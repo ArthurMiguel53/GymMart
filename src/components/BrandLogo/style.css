@@ -1,7 +1,7 @@
 @import '../../assets/styles/color-palette.css';
 
 .brand-logo-container .highlighted-letter {
-    color: var(--accent-color);
+    color: var(--dark-purple-color);
     left: -40px;
     position: relative;
 }
