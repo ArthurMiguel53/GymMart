@@ -5,7 +5,7 @@
         </div>
         <div class="categories">
             <div v-for="atalho in atalhos.shortcuts" :key="atalho.id">
-                <Shortcuts :ShortcutLink="atalho.link" :ShortcutName="atalho.name" />
+                <Shortcuts :atalho="atalho" />
             </div>
         </div>
         <div class="icons">
@@ -13,23 +13,24 @@
             <font-awesome-icon :icon="['fas', 'cart-arrow-down']" id="cart-icon" title="carrinho" />
             <font-awesome-icon :icon="['fas', 'magnifying-glass']" id="lupa-icon" title="pesquisar" />
         </div>
+        <MenuHamburger />
         <div>
-            <form action="#" method="post">
-                
-            </form>
+            <form action="#" method="post"></form>
         </div>
     </nav>
 </template>
-
+  
 <script lang="ts">
 import { defineComponent } from 'vue';
 import json from "../../json/NavbarShortcuts.json";
 import BrandLogo from "@/components/BrandLogo/BrandLogo.vue";
 import Shortcuts from "./Shortcuts/Shortcuts.vue";
+import MenuHamburger from "./MenuHamburger/MenuHamburger.vue";
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faSearch, faCartArrowDown } from '@fortawesome/free-solid-svg-icons';
+
 library.add(faUser, faSearch, faCartArrowDown);
 
 export default defineComponent({
@@ -37,7 +38,8 @@ export default defineComponent({
     components: {
         BrandLogo,
         Shortcuts,
-        FontAwesomeIcon
+        FontAwesomeIcon,
+        MenuHamburger
     },
     data() {
         return {
@@ -46,5 +48,5 @@ export default defineComponent({
     }
 });
 </script>
-
+  
 <style scoped lang="css" src="./styles.css"></style>
