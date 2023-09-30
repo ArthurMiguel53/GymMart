@@ -2,33 +2,49 @@
     "shortcuts": [
         {
             "id": 1,
-            "name": "Ganho de Massa",
-            "link": "/Ganho de Massa"
+            "name": "Home",
+            "link": "/home"
         },
         {
             "id": 2,
-            "name": "Perda de Gordura",
-            "link": "/Perda de Gordura"
-        },
-        {
-            "id": 3,
-            "name": "Pré Treinos",
-            "link": "/Pré Treinos"
-        },
-        {
-            "id": 4,
-            "name": "Suplementos",
-            "link": "/Suplementos"
-        },
-        {
-            "id": 5,
-            "name": "Acessórios",
-            "link": "/Acessórios"
+            "name": "Categorias",
+            "dropdown": [
+                {
+                    "id": 1,
+                    "name": "Ganho de Massa",
+                    "link": "/categorias/ganho-de-massa"
+                },
+                {
+                    "id": 2,
+                    "name": "Perda de Gordura",
+                    "link": "/categorias/perda-de-gordura"
+                },
+                {
+                    "id": 3,
+                    "name": "Pré Treinos",
+                    "link": "/categorias/pre-treinos"
+                },
+                {
+                    "id": 4,
+                    "name": "Suplementos",
+                    "link": "/categorias/suplementos"
+                },
+                {
+                    "id": 5,
+                    "name": "Acessórios",
+                    "link": "/categorias/acessórios"
+                }
+            ]
         },
         {
             "id": 6,
-            "name": "Central De Ajuda",
-            "link": "/Central De Ajuda"
+            "name": "Sobre nós",
+            "link": "/sobre-nós"
+        },
+        {
+            "id": 7,
+            "name": "Central de Ajuda",
+            "link": "/central-de-ajuda"
         }
     ]
 }

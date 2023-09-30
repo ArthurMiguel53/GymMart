@@ -1,0 +1,25 @@
+.menu-hamburger-container {
+    display: none;
+    transform: scale(0.8);
+}
+
+.menu-hamburger-container #top-line,
+.menu-hamburger-container #middle-line,
+.menu-hamburger-container #bottom-line {
+    background-color: var(--pale-aqua-color);
+    height: 2px;
+    margin: 10px 0;
+    width: 35px;
+}
+
+@media (max-width: 425px) {
+    .menu-hamburger-container {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-hamburger-container {
+        display: block;
+    }
+}
