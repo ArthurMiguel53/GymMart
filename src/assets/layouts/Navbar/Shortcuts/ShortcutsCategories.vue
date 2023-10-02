@@ -23,7 +23,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 export default defineComponent({
-    name: "Shortcuts",
+    name: "ShortcutsCategories",
     components: {
         FontAwesomeIcon
     },

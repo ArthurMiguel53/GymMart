@@ -1,5 +1,9 @@
 @import '../../assets/styles/color-palette.css';
 
+*{
+    cursor: pointer
+}
+
 .brand-logo-container .highlighted-letter {
     color: var(--dark-purple-color);
     left: -40px;
