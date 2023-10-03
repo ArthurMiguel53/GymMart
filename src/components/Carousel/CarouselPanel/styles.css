@@ -1,0 +1,20 @@
+.carousel-controls-container {
+    cursor: pointer;
+}
+
+.carousel-controls-container img {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    height: clamp(60px, 20%, 85px);
+    padding: 15px;
+    position: relative;
+    transition: 0.4s;
+    width: clamp(50px, 15%, 150px);
+}
+
+.carousel-controls-container img:hover {
+    background: rgba(44, 44, 44, 0.25);
+}
