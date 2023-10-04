@@ -35,6 +35,14 @@ nav {
     padding: 5px;
 }
 
+#cart-icon,
+#lupa-icon,
+#login-icon {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 5px;
+}
+
 @media (max-width: 768px) {
     nav {
         align-items: center;
