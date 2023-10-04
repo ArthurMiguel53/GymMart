@@ -36,7 +36,22 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .icons {
-        display: none;
+    nav {
+        align-items: center;
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 5px;
+        box-shadow: 0 8px 14px 0 rgba(31, 38, 135, 0.37);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        left: 50%;
+        margin: 0 auto;
+        padding: 1% 1%;
+        position: absolute;
+        top: 1%;
+        transform: translateX(-50%);
+        width: 95%;
     }
 }
