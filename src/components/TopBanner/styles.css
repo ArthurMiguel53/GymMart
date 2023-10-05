@@ -4,6 +4,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
     display: flex;
     position: relative;
+    right: 0px;
     width: 100%;
 }
 
@@ -118,7 +119,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
         padding: 0;
+    }
+
+    .top-banner-container {
+        clip-path: none;
     }
 
     .top-banner-container #background-image-pc-1024px {
@@ -134,7 +140,7 @@
         text-align: center;
     }
 
-    .banner-information h1 {
+    .banner-information h1, .banner-information p {
         text-align: center;
     }
 }

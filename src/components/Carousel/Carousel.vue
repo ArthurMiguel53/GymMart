@@ -9,9 +9,9 @@
                     :backgroundImage1024px="product.backgroundImage1024px" />
             </div>
         </div>
-    </div>
-    <div class="carousel-controls-container">
-        <CarouselPanel :productDetails="products" @clickedControlProductIndex="exchangeBannerInfo" />
+        <div class="carousel-controls-container">
+            <CarouselPanel :productDetails="products" @clickedControlProductIndex="exchangeBannerInfo" />
+        </div>
     </div>
 </template>
 

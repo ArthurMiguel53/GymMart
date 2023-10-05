@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "productImage": "/img/PreWorkout/nitro-surge-max.png",
+            "productAlt": "Nitrosurge Max Pre Workout",
+            "productTitle": "Nitrosurge™ Max Pre Workout",
+            "productDescription": "Nitrosurge™ Max está revolucionando a experiência pré-treino, permitindo que você eleve o seu próprio desempenho. Esta fórmula poderosa está repleta de ingredientes patenteados de primeira linha, como nooLVL®, PurCaf®, AlphaSize®, ElevATP®, e uma série de outros componentes cientificamente comprovados para pré-treino. Prepare-se para bombas explosivas, energia sustentada, força aumentada e foco inabalável, permitindo que você desbloqueie todo o seu potencial em cada treino. Domine seus limites e alcance o máximo com Nitrosurge™ Max!",
+            "productPrice": "R$39.99",
+            "actionButtonLink": "#",
+            "actionButtonTitle": "Comprar agora",
+            "backgroundImage1440px": "/img/PromotionalModels/nitro-surge-max-spokesperson-1440px.png",
+            "backgroundImage1024px": "/img/PromotionalModels/nitro-surge-max-spokesperson-1024px.png"
+        },
+        {
+            "id": 2,
+            "productImage": "/img/Accessories/the-rambler-oz-bottle.png",
+            "productAlt": "The Rambler® 1 L / 36 oz Bottle",
+            "productTitle": "The Rambler® oz Bottle",
+            "productDescription": "Prepare-se para conquistar a natureza com a Garrafa The Rambler®! Esta garrafa é projetada para enfrentar os dias escaldantes na fazenda, os terrenos acidentados e qualquer desafio que a vida ao ar livre possa apresentar. Ela não apenas mantém suas bebidas incrivelmente geladas ou escaldantemente quentes, mas também é um símbolo de ousadia e aventura. Escolha a cor que combina com sua personalidade, seja o aço inoxidável clássico ou as vibrantes cores DuraCoat™. Domine o mundo lá fora com estilo e confiança!",
+            "productPrice": "R$ 253,00",
+            "actionButtonLink": "#",
+            "actionButtonTitle": "Comprar agora",
+            "backgroundImage1440px": "/img/PromotionalModels/the-rambler-oz-bottle-spokesperson-1440px.png",
+            "backgroundImage1024px": "/img/PromotionalModels/the-rambler-oz-bottle-spokesperson-1024px.png"
+        },
+        {
+            "id": 3,
+            "productImage": "/img/Supplements/whey-protein-powder.png",
+            "productAlt": "100% Whey Protein Powder",
+            "productTitle": "Whey Protein Powder",
+            "productDescription": "O pó de proteína de whey oferece a solução definitiva para o crescimento muscular e recuperação, combinando três tipos distintos de whey: whey isolado, whey concentrado e whey hidrolisado. Essa mistura única fornece um equilíbrio ideal de proteínas, carboidratos e gorduras para potencializar seus treinos de forma eficaz, tudo enquanto é fácil de digerir e rapidamente absorvido. Com a adição de enzimas digestivas que aumentam a absorção de aminoácidos em 20%, é uma escolha versátil para qualquer momento do dia - seja de manhã, entre as refeições ou pós-treino - e satisfaz seu paladar enquanto é fácil de preparar quando você está em movimento.",
+            "productPrice": "R$ 340,00",
+            "actionButtonLink": "#",
+            "actionButtonTitle": "Comprar agora",
+            "backgroundImage1440px": "/img/PromotionalModels/whey-protein-powder-spokesperson-1440px.png",
+            "backgroundImage1024px": "/img/PromotionalModels/whey-protein-powder-spokesperson-1024px.png"
+        }
+    ]
+}

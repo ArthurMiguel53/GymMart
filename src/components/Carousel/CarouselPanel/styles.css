@@ -12,9 +12,18 @@
     padding: 15px;
     position: relative;
     transition: 0.4s;
-    width: clamp(50px, 15%, 150px);
+    width: clamp(50px, 15%, 150px); 
+    margin: 0 5px;
 }
 
 .carousel-controls-container img:hover {
     background: rgba(44, 44, 44, 0.25);
+   
+}
+
+@media (max-width: 425px) {
+    .carousel-controls-container {
+        display: flex;
+        width: 100%;
+    }
 }
