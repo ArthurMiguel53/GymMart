@@ -10,7 +10,7 @@
             </div>
         </div>
         <div :style="{ backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(' + backgroundImage1440px + ')' }"
-            id="background-image-pc-1440px"></div>
+            id=""></div>
         <div :style="{ backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(' + backgroundImage1024px + ')' }"
             id="background-image-pc-1024px"></div>
     </section>
