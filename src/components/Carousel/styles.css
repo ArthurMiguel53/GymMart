@@ -10,3 +10,12 @@
     right: 0;
     transform: translateY(-50%);
 }
+
+@media (max-width: 425px) {
+    .carousel-controls-container {
+        transform: none;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
