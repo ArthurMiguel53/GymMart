@@ -1,15 +1,6 @@
 <template>
-  <Navbar />
+  <RouterView />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-
-import Navbar from "./assets/layouts/Navbar/Navbar.vue";
-
-export default defineComponent({
-  components: {
-    Navbar
-  }
-})
 </script>
