@@ -1,3 +1,13 @@
+@keyframes UpFontSize {
+    from{
+        font-size: clamp(0px, 0vw, 16px);
+    }
+
+    to{
+        font-size: clamp(14px, 2vw, 16px);
+    }
+}
+
 ul a,
 ul li {
     align-items: center;
@@ -5,33 +15,62 @@ ul li {
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    font-size: clamp(14px, 2vw, 16px);
+    /*font-size: clamp(14px, 2vw, 16px);*/
     gap: 10px;
     margin-left: 10px;
     margin-right: 10px;
     position: relative;
     text-decoration: none;
+    margin-top: 3px;
+    animation: UpFontSize 2s ease forwards;
+}
+
+ul a:hover{
+    color: grey;
 }
 
 .dropdown-closed {
     display: none;
 }
 
+@keyframes DropDown {
+    from{
+        width: 0px;
+    }
+
+    to{
+        width: 200px
+    }
+}
+
+@keyframes DropDown {
+    from{
+        width: 0px;
+    }
+
+    to{
+        width: 200px
+    }
+}
+
 .dropdown-open {
+    padding: 10px;
     background: rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
     position: absolute;
-    top: 30px;
+    top: 40px;
+    animation: UpPadding 200ms ease forwards;
+    animation: DropDown 900ms ease forwards;
 }
 
 .dropdown-toggle #dropdown-icon {
     color: var(--dark-purple-color);
     margin-left: -5px;
+    animation: DropDown 400ms ease reverse;
 }
 
 @media (max-width: 768px) {
