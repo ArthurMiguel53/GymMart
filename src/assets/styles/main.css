@@ -58,7 +58,31 @@ p {
   font-weight: 500;
 }
 
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0;
+}
+
 span {
   font-family: 'Exo 2', sans-serif;
   font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.highlight-span {
+  color: var(--dark-purple-color);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
 }
