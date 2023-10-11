@@ -15,11 +15,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ShortcutsCategories from "../Shortcuts/ShortcutsCategories.vue"
+import Shortcuts from "../Shortcuts/Shortcuts.vue"
 
 export default defineComponent({
     name: "MenuHamburger",
-    components: ShortcutsCategories,
+    components: Shortcuts,
 
     data() {
         return{
