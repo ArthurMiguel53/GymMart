@@ -8,7 +8,7 @@
   
 <script lang="ts">
 import { defineComponent } from "vue";
-import { Product } from "../interfaces/ProductInterface";
+import { Product } from "../../../types/Carousel/ProductInterface";
 
 export default defineComponent({
     name: "CarouselPanel",
@@ -28,3 +28,4 @@ export default defineComponent({
 </script>
   
 <style scoped lang="css" src="./styles.css"></style>
+../../../types/Carousel/ProductInterface

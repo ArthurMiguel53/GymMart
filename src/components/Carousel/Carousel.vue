@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { Product } from "./interfaces/ProductInterface";
+import { Product } from "../../types/Carousel/ProductInterface";
 
 import TopBanner from "../TopBanner/TopBanner.vue";
 import CarouselPanel from './CarouselPanel/CarouselPanel.vue';
