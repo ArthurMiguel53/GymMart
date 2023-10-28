@@ -5,7 +5,7 @@
                 {{ atalho.name }}
                 <font-awesome-icon id="dropdown-icon" :icon="dropdownStatusIcon" />
                 <div :class="isDropdownOpen ? 'dropdown-open' : 'dropdown-closed'">
-            <li v-for="item in atalho.dropdown" :key="item.id" class="dropdown-item">
+            <li v-for="item in atalho.dropdown" :key="item.id" id="dropdown-item">
                 <router-link :to="item.link">{{ item.name }}</router-link>
             </li>
     </div>
@@ -23,7 +23,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 export default defineComponent({
-    name: "ShortcutsCategories",
+    name: "Shortcuts",
     components: {
         FontAwesomeIcon
     },
@@ -51,8 +51,8 @@ export default defineComponent({
                 this.dropdownStatusIcon = this.isDropdownOpen ? faChevronUp : faChevronDown;
             }
         }
-    }
-})
+    },
+}) 
 </script>
   
 <style scoped lang="css" src="./styles.css"></style>  

@@ -5,7 +5,7 @@
         </div>
         <div class="categories">
             <div v-for="atalho in atalhos.shortcuts" :key="atalho.id">
-                <ShortcutsCategories :atalho="atalho" />
+                <Shortcuts :atalho="atalho" />
             </div>
         </div>
         <div class="icons">
@@ -24,7 +24,7 @@
 import { defineComponent } from 'vue';
 import json from "../../json/NavbarShortcuts.json";
 import BrandLogo from "@/components/BrandLogo/BrandLogo.vue";
-import ShortcutsCategories from "./Shortcuts/ShortcutsCategories.vue";
+import Shortcuts from "./Shortcuts/Shortcuts.vue";
 import MenuHamburger from "./MenuHamburger/MenuHamburger.vue";
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -37,7 +37,7 @@ export default defineComponent({
     name: "Navbar",
     components: {
         BrandLogo,
-        ShortcutsCategories,
+        Shortcuts,
         FontAwesomeIcon,
         MenuHamburger
     },
