@@ -1,0 +1,221 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: none;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-image: url('/public/img/NewsletterBanner/portrait-muscled-woman-training-with-barbell-isolated-purple-background-neon-light.jpg');
+    background-size: cover;
+    background-position: bottom 60% right 100%;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    mix-blend-mode: lighten;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        ;
+        background-color: #020202b2;
+    }
+}
+
+.criar-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.25);
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 30vw;
+    padding: 30px 15px;
+}
+
+.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #0d0d11;
+    border-radius: var(--default-border-radius);
+}
+
+.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff86;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more:hover .circle {
+    width: 100%;
+}
+
+.learn-more:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.learn-more:hover .button-text {
+    color: #fff;
+}
+
+button {
+    margin-top: var(--spacing-vertical);
+}
+
+.toggle-button {
+    margin: 10px 0;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.form-title {
+    margin-top: var(--spacing-vertical);
+}
+
+.main-card-buttons {
+    margin-bottom: var(--spacing-vertical);
+}
+
+.social-message {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.line {
+    height: 1px;
+    flex: 1 1 0%;
+    background-color: rgb(92, 107, 131);
+}
+
+.social-message span  {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 0.995rem;
+    line-height: 1.25rem;
+    color: rgb(251, 253, 255);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons .icon {
+    border-radius: var(--default-border-radius);
+    padding: 0.75rem;
+    border: none;
+    background-color: transparent;
+    margin-left: 2px;
+}
+
+.social-icons .icon svg {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: #fff;
+}
+
+.form-containerr {
+    display: flex;
+}
+
+.password-display-icon {
+    cursor: pointer;
+}
+
+#password-reset-button {
+    position: relative;
+    top: 65px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+        background-image: none;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .criar-login {
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+
+    .criar-login {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 85vw;
+    }
+}

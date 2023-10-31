@@ -1,0 +1,13 @@
+.social-icons .icon {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.125rem;
+    margin-left: 2px;
+    padding: 0.75rem;
+}
+
+.social-icons .icon svg {
+    fill: #fff;
+    height: 1.75rem;
+    width: 1.75rem;
+}
