@@ -3,7 +3,7 @@
   src: url('../fonts/sports_jersey/sportsjersey.ttf') format('truetype');
 }
 
-@import "./color-palette.css";
+@import "./variables.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Exo:wght@700&family=Noto+Sans+Georgian:wght@200&display=swap');
 
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url('../../../public/img/scattered-forcefields.png');
+  background-image: url('../../../public/img/WebsiteBackground/scattered-forcefields.png');
   background-position: center;
   background-size: 100%;
   color: var(--pale-aqua-color);
@@ -41,10 +41,30 @@ body::before {
   z-index: -1;
 }
 
+body ul li {
+  list-style: none;
+}
+
 h1 {
   font-family: 'Exo', sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
   text-transform: uppercase;
+  margin-bottom: var(--spacing-vertical);
+}
+
+.form-title {
+  color: var(--light-blue-color);
+  font-family: 'Exo', sans-serif;
+  font-size: clamp(2.6rem, 3vw, 3rem);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-vertical);
+}
+
+h2 {
+  font-family: 'Exo', sans-serif;
+  font-size: clamp(2.6rem, 3vw, 3rem);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-vertical);
 }
 
 html {
@@ -55,10 +75,28 @@ html {
 p {
   font-family: 'Noto Sans Georgian', sans-serif;
   font-size: clamp(1rem, 3vw, 1.5rem);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 span {
   font-family: 'Exo 2', sans-serif;
   font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.highlight-span {
+  color: var(--light-blue-color);
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #b6eadabb;
+  transition: var(--slow-element-transition);
+
+
+  &:hover {
+    color: var(--light-blue-color);
+  }
 }

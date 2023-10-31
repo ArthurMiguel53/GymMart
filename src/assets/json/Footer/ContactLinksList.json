@@ -1,0 +1,22 @@
+{
+    "contactArray": [
+        {
+            "id": 1,
+            "useRouterLink": false,
+            "listItemUrl": "#",
+            "listItemText": "@gym_mart"
+        },
+        {
+            "id": 2,
+            "useRouterLink": false,
+            "listItemUrl": "#",
+            "listItemText": "parcerias@gymmart.com"
+        },
+        {
+            "id": 3,
+            "useRouterLink": false,
+            "listItemUrl": "#",
+            "listItemText": "+1 (123) 456-7890"
+        }
+    ]
+}

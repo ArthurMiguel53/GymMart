@@ -1,0 +1,24 @@
+
+:root {
+    --dark-blue-color: #03001C;
+    --dark-purple-color: #301E67;
+    --light-blue-color: #5B8FB9;
+    --pale-aqua-color: #B6EADA;
+}
+
+:root {
+    --clip-path-beveled-corner: polygon(0% 0.5em, 0.5em 0, 100% 0, 100% calc(100% - 0.5em), calc(100% - 0.5em) 100%, 0 100%);
+}
+
+:root {
+    --default-border: 1px solid rgba(255, 255, 255, 0.18);
+    --default-border-radius: 10px;
+}
+
+:root {
+    --spacing-vertical: 1em;
+}
+
+:root {
+    --slow-element-transition: all 1s;
+}

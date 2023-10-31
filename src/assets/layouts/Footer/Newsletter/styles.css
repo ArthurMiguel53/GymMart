@@ -1,0 +1,68 @@
+.newsletter-form-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--default-border-radius);
+    display: flex;
+    height: 100%;
+    padding: 30px;
+    position: relative;
+    top: 0;
+    transition: var(--slow-element-transition);
+    width: 100%;
+    z-index: 1;
+}
+
+.newsletter-form-container::before {
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: var(--default-border-radius);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.newsletter-form-container:hover {
+    top: -10px;
+}
+
+.introduction-container {
+    width: 50%;
+}
+
+.introduction-container p {
+    margin-bottom: var(--spacing-vertical);
+}
+
+.signup-container {
+    width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter-form-container {
+        align-items: center;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .introduction-container {
+        width: 100%;
+    }
+
+    .signup-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .newsletter-form-container {
+        background-size: 150%;
+        background-position: 0%;
+    }
+}
