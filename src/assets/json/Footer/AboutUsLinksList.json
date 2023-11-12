@@ -1,0 +1,34 @@
+{
+    "aboutUsArray": [
+        {
+            "id": 1,
+            "useRouterLink": true,
+            "listItemUrl": "/ganho-de-massa",
+            "listItemText": "Nossa missão"
+        },
+        {
+            "id": 2,
+            "useRouterLink": true,
+            "listItemUrl": "/perda-de-gordura",
+            "listItemText": "A nossa equipe"
+        },
+        {
+            "id": 3,
+            "useRouterLink": true,
+            "listItemUrl": "/pre-treinos",
+            "listItemText": "Política Para Vendedores"
+        },
+        {
+            "id": 4,
+            "useRouterLink": true,
+            "listItemUrl": "/suplementos",
+            "listItemText": "A História da Gym Mart"
+        },
+        {
+            "id": 5,
+            "useRouterLink": true,
+            "listItemUrl": "/acessorios",
+            "listItemText": "Nossos Valores"
+        }
+    ]
+}

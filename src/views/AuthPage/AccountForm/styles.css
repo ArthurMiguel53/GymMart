@@ -1,0 +1,37 @@
+.container {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px;
+    perspective: 1000px;
+}
+
+.card {
+    align-items: center;
+    border-radius: var(--default-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    position: relative;
+    top: -10px;
+    transform: transform-style preserve-3d;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    width: 30vw;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .card {
+        width: 85vw;
+    }
+}
+
+.input-container {
+    margin: var(--spacing-vertical) 0;
+}

@@ -1,0 +1,28 @@
+{
+    "purchaseResourcesArray": [
+        {
+            "id": 1,
+            "useRouterLink": true,
+            "listItemUrl": "/politica-de-devolucao",
+            "listItemText": "Política de devolução"
+        },
+        {
+            "id": 2,
+            "useRouterLink": true,
+            "listItemUrl": "/guia-de-tamanhos",
+            "listItemText": "Guia de tamanhos"
+        },
+        {
+            "id": 3,
+            "useRouterLink": true,
+            "listItemUrl": "/envio-e-devolucao",
+            "listItemText": "Envio e rastreamento"
+        },
+        {
+            "id": 4,
+            "useRouterLink": true,
+            "listItemUrl": "/perguntas-frequentes",
+            "listItemText": "Perguntas frequentes (FAQ)"
+        }
+    ]
+}

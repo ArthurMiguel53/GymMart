@@ -1,0 +1,16 @@
+{
+    "helpfulFooterLinks": [
+        {
+            "id": 1,
+            "useRouterLink": true,
+            "shortcutLink": "/assine-o-plano",
+            "shortcutName": "Assine o plano"
+        },
+        {
+            "id": 2,
+            "useRouterLink": true,
+            "shortcutLink": "/locais",
+            "shortcutName": "Locais"
+        }
+    ]
+}
