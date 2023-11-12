@@ -43,29 +43,29 @@
                     pathLink="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
             </div>
         </div>
-        <form id="signup-form" v-if="mostrarFormularioCriarConta" @submit="submitForm">
+        <form id="signup-form" v-if="mostrarFormularioCriarConta" @submit.prevent="checkRegistrationForm">
             <AccountForm formTitle="Desbloqueie o Potencial Fitness: Crie Sua Conta na Gym Mart!">
                 <template #form-inputs>
                     <InputField inputType="text" inputPlaceholder="Digite seu nome aqui" :requiredOption="true"
-                        :maximumNumberOfCharacters="50">
+                        :maximumNumberOfCharacters="50" v-model="userNameInputValue" @input="onUsernameInput">
                         <template #firstIcon>
                             <font-awesome-icon :icon="['fas', 'user']" class="icon" />
                         </template>
                     </InputField>
                     <InputField inputType="text" inputPlaceholder="Digite seu sobrenome aqui" :requiredOption="true"
-                        :maximumNumberOfCharacters="50">
+                        :maximumNumberOfCharacters="50" v-model="userSurnameInputValue" @input="onSurnameInput">
                         <template #firstIcon>
                             <font-awesome-icon :icon="['fas', 'user']" class="icon" />
                         </template>
                     </InputField>
                     <InputField inputType="email" inputPlaceholder="Seu email" :requiredOption="true"
-                        :maximumNumberOfCharacters="320">
+                        :maximumNumberOfCharacters="320" v-model="userEmailInputValue" @input="onEmailInput">
                         <template #firstIcon>
                             <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
                         </template>
                     </InputField>
                     <InputField :inputType="passwordInputType" inputPlaceholder="Sua senha (mínimo de 8 caracteres)"
-                        :requiredOption="true" :maximum-number-of-characters="8">
+                        :requiredOption="true" :maximum-number-of-characters="8" @input="onPasswordInput">
                         <template #firstIcon>
                             <font-awesome-icon :icon="['fas', 'lock']" class="icon" />
                         </template>
@@ -77,7 +77,8 @@
                         </template>
                     </InputField>
                     <InputField :inputType="passwordInputType" inputPlaceholder="Confirme sua senha" :requiredOption="true"
-                        :maximum-number-of-characters="8">
+                        :maximum-number-of-characters="8" v-model="userConfirmPasswordValue"
+                        @input="onConfirmPasswordInput">
                         <template #firstIcon>
                             <font-awesome-icon :icon="['fas', 'lock']" class="icon" />
                         </template>
@@ -89,13 +90,13 @@
             </AccountForm>
         </form>
 
-        <form class="login-form" v-else @submit="submitForm">
+        <form class="login-form" v-else @submit.prevent="checkLoginForm">
             <AccountForm formTitle="De Volta à Gym Mart! Saudades de Você! :)">
                 <template #form-inputs>
                     <InputField inputType="email" inputPlaceholder="Seu email" :requiredOption="true"
-                        :maximumNumberOfCharacters="320">
+                        :maximumNumberOfCharacters="320" v-model="userEmailInputValue" @input="onEmailInput">
                         <template #firstIcon>
-                            <font-awesome-icon :icon="['fas', 'envelope']" />
+                            <font-awesome-icon :icon="['fas', 'envelope']" class="icon" />
                         </template>
                     </InputField>
                     <InputField :inputType="passwordInputType" inputPlaceholder="Sua senha" :requiredOption="true"
@@ -112,7 +113,8 @@
                     </InputField>
                 </template>
                 <template #form-buttons>
-                    <span id="password-reset-button"><router-link to="/redefine-password-page">Esqueceu sua senha?</router-link></span> <br>
+                    <span id="password-reset-button"><router-link to="/redefine-password-page">Esqueceu sua
+                            senha?</router-link></span> <br>
                     <ActionButton ButtonLink="/" ButtonText="Entrar" type="submit" />
                 </template>
             </AccountForm>
@@ -122,6 +124,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import axios from 'axios';
 
 import AccountForm from "./AccountForm/AccountForm.vue";
 import InputField from '@/components/InputField/InputField.vue';
@@ -143,12 +146,13 @@ export default defineComponent({
         FontAwesomeIcon,
         SvgIcon
     },
-    data() {
-        return {
-            mostrarFormularioCriarConta: false,
-        };
-    },
     setup() {
+        const mostrarFormularioCriarConta = ref(false);
+        const userNameInputValue = ref("");
+        const userSurnameInputValue = ref("");
+        const userEmailInputValue = ref("");
+        const userPasswordValue = ref("");
+        const userConfirmPasswordValue = ref("");
         const passwordInputType = ref('password');
         const isPasswordHidden = ref(true);
 
@@ -157,20 +161,140 @@ export default defineComponent({
             isPasswordHidden.value = !isPasswordHidden.value;
         }
 
-        const inputValue = ref("");
+        const onUsernameInput = (event: Event) => {
+            if (event.target instanceof HTMLInputElement) {
+                const newValue = event.target.value;
 
-        const submitForm = () => {
-            window.alert("Logado com sucesso!");
+                if (/[\d\s]/.test(newValue)) {
+                    alert('Por favor, não digite números e nem espaços. Caso você tenha dois nomes, digite apenas o primeiro. Obrigado!');
+                    event.target.value = '';
+                } else {
+                    userNameInputValue.value = newValue;
+                }
+            }
+        }
+
+        const onSurnameInput = (event: Event) => {
+            if (event.target instanceof HTMLInputElement) {
+                const newValue = event.target.value;
+
+                if (/[\d]/.test(newValue)) {
+                    alert('Por favor, não digite números no campo de sobrenome. Obrigado.');
+                    event.target.value = '';
+                } else {
+                    userSurnameInputValue.value = newValue;
+                }
+            }
+        }
+
+        const onEmailInput = (event: Event) => {
+            if (event.target instanceof HTMLInputElement) {
+                const newValue = event.target.value;
+                console.log(typeof newValue);
+                userEmailInputValue.value = newValue;
+            }
+        }
+
+        const onPasswordInput = (event: Event) => {
+            if (event.target instanceof HTMLInputElement) {
+                const newValue = event.target.value;
+                console.log(typeof newValue);
+                userPasswordValue.value = newValue;
+            }
+        }
+
+        const onConfirmPasswordInput = (event: Event) => {
+            if (event.target instanceof HTMLInputElement) {
+                const newValue = event.target.value;
+                console.log(typeof newValue);
+                userConfirmPasswordValue.value = newValue;
+            }
+        }
+
+        const userData = {
+            user_name: userNameInputValue.value,
+            user_surname: userSurnameInputValue.value,
+            user_email: userEmailInputValue.value,
+            user_password: userPasswordValue.value,
+        };
+
+        const sendDataToAPI = () => {
+            const userData = {
+                user_name: userNameInputValue.value,
+                user_surname: userSurnameInputValue.value,
+                user_email: userEmailInputValue.value,
+                user_password: userPasswordValue.value,
+            };
+            console.log("Dados do usuário a serem enviados para a API:", userData);
+            axios.post('http://localhost:8000/user-authentication/', userData)
+                .then(response => {
+                    console.log(response.data);
+                    window.alert('Cadastro realizado com sucesso!');
+                })
+                .catch(error => {
+                    console.error(error);
+                    window.alert('Erro ao cadastrar. Tente novamente.');
+                });
+        }
+
+        const checkRegistrationForm = (event: Event) => {
+            const userEmail = userEmailInputValue.value;
+            const userPassword = userPasswordValue.value;
+            const userConfirmPassword = userConfirmPasswordValue.value;
+            const emailDomainRegex = /@(gmail.com|hotmail.com|yahoo.com|icloud.com|protonmail.com)/;
+
+            if (emailDomainRegex.test(userEmail)) {
+                if (userPassword == userConfirmPassword) {
+                    sendDataToAPI();
+                } else {
+                    alert(`As senhas digitadas não coincidem.`);
+                    event.preventDefault();
+                }
+            } else {
+                alert('Por favor, digite um email com um dos seguintes domínios: @gmail.com, @hotmail.com, @yahoo.com, @icloud.com ou @protonmail.com');
+                userEmailInputValue.value = '';
+            }
+        }
+
+        const checkLoginForm = (event: Event) => {
+            const userEmail = userEmailInputValue.value;
+            const userPassword = userPasswordValue.value;
+            const userConfirmPassword = userConfirmPasswordValue.value;
+            const emailDomainRegex = /@(gmail.com|hotmail.com|yahoo.com|icloud.com|protonmail.com)/;
+
+            if (emailDomainRegex.test(userEmail)) {
+                if (userPassword == userConfirmPassword) {
+                    alert('Logado com sucesso!');
+                } else {
+                    alert(`As senhas digitadas não coincidem.`);
+                    event.preventDefault();
+                }
+            } else {
+                alert('Por favor, digite um email com um dos seguintes domínios: @gmail.com, @hotmail.com, @yahoo.com, @icloud.com ou @protonmail.com');
+                userEmailInputValue.value = '';
+            }
         }
 
         return {
+            mostrarFormularioCriarConta,
+            userNameInputValue,
+            userSurnameInputValue,
+            userEmailInputValue,
+            userPasswordValue,
+            userConfirmPasswordValue,
             passwordInputType,
             isPasswordHidden,
             togglePasswordVisibility,
-            inputValue,
-            submitForm
+            sendDataToAPI,
+            onUsernameInput,
+            onSurnameInput,
+            onEmailInput,
+            onPasswordInput,
+            onConfirmPasswordInput,
+            checkRegistrationForm,
+            checkLoginForm
         };
-    }
+    },
 })
 </script>
 
