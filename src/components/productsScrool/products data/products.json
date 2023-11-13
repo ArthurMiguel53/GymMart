@@ -1,0 +1,171 @@
+{
+    "products": [
+          {  
+            "id": 1,
+            "name": "Whey Gold chocolate",
+            "image":"/img/products/GoldStandartWhey.png",
+            "alt": "imagem do suplemento whey",
+            "description": "Oferece 24 g de proteína de soro(WHEY) por porção.Fórmula sem glúten feita sem hormônios de crescimento artificiais",
+            "price": "R$300",
+            "discountedPrice": "R$240",
+            "buttonText": "Comprar",
+            "buttonLink": "."
+          },
+          {
+            "id": 2,
+            "name": "Whey protein cookies and cream",
+            "image":"/img/Products/WheyCookiesAndCream.png" ,
+            "alt": "imagem do suplemento em pó whey de cookies and cream",
+            "description": "Os benefícios deste produto consiste em: ganho de massa muscular, ganho de força, aporte proteico e energético e a recuperação de carboidratos. Este produto hipercalórico, é um suplemento a base de carboidratos, que ajuda no aumento de peso corporal e ganho de massa magra.",
+            "price": "R$95",
+            "discountedPrice": "R$75",
+            "buttonText": "Comprar",
+            "buttonLink": "."
+          },
+          {
+            "id": 3,
+            "name": "Mass titanium 17500",
+            "image":"/img/Products/WheyChocolate.png" ,
+            "alt": "imagem do suplemento em pó",
+            "description": "Este produto é hipercalórico e sem lactose, combinando 3 fontes protéicas e 2 fontes de carboidratos. Possui 17g de proteína por porção, 1.849mg de BCAA por porção e WPI, além de ser fonte de vitaminas e minerais. Consumir uma porção por dia (160g ou 5 dosadores com água gelada ou leite desnatado).",
+            "price": "R$140",
+            "discountedPrice": "R$115",
+            "buttonText": "Comprar",
+            "buttonLink": "."
+      
+          },
+          {
+            "id": 4,
+            "name": "Super gainers anticatabolic",
+            "image":"/img/Products/WheyBaunilha.png" ,
+            "alt": "imagem do suplemento em pó",
+            "description": "Este produto fornece 3g de creatina por porção, auxiliando o desempenho durante treinos curtos e de grande intensidade. Além disso, é fonte de proteínas e carboidratos de liberação imediata e gradual. Possui 3.140mg de BCAA e 16g de whey protein por porção. É sem glúten. Para o preparo, misture 160g (5 dosadores) em água gelada ou leite desnatado, deve ser ingerido uma vez ao dia. Este produto não é indicado para menores de 19 anos ou não praticantes de exercícios físicos.",
+            "price": "R$160",
+            "discountedPrice": "R$130",
+            "buttonText": "Comprar",
+            "buttonLink": "."
+          },
+          {
+          "id": 5,
+          "name": "Glutamine isolates integral medica" ,
+          "image":"/img/Products/Glutamine.png" ,
+          "alt": "imagem da glutamina integral medica",
+          "description": "É indicado para atletas e praticantes de atividades físicas pois estimula a síntese proteica e para as pessoas que desejam melhorar o sistema imunológico. ",
+          "price": "R$90",
+          "discountedPrice": "R$70",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        { 
+          "id": 6,
+          "name": "Best whey banana cream atlhetica nutrition" ,
+          "image":"/img/products/WheyBanana.png" ,
+          "alt": "imagem do suplemento whey de banana",
+          "description": "Suplemento alimentar de proteínas em pó, fórmula best whey blend proteína concentrada do soro do leite, wpc proteína isolada do soro do leite wpc proteína hidrolisada do soro do leite wph flocos de banana.",
+          "price": "R$190",
+          "discountedPrice": "R$180",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        
+        } ,
+        {  
+          "id": 7,
+          "name": "Phytofina" ,
+          "image":"/img/Products/phytofina.png" ,
+          "alt": "imagem do produto em capsulas phytofina",
+          "description": "Rico em vitamina E C e B6, sem glúten, ajuda na aceleração do metabolismo, controle de apetite e perda de peso, proporcionando energia em sobre durante todo o dia.",
+          "price": "R$240",
+          "discountedPrice": "R$220",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        } ,
+        { 
+          "id": 8,
+          "name": "DefinaMax" ,
+          "image":"/img/Products/Definamax.png" ,
+          "alt": "imagem do produto em capsulas definaMax",
+          "description": "Sua fórmula se provou capaz de reduzir até 19% de gordura corporal nos clientes que usaram o produto entre 3 a 4 meses. Entre os resultados comprovados estão energia extra, metabolismo acelerado e redução do desejo de alimentos por compulsão. ",
+          "price": "R$280",
+          "discountedPrice": "R$260",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        {
+          "id": 9,
+          "name": "Albumina Naturaovos",
+          "image":"/img/Products/Albumina.png" ,
+          "alt": "imagem do suplemento em pó albumina de abacaxi",
+          "description": "O principal ingrediente do produto é o ovo desitratado, é recomendado que seja consumido em até 30 dias; ajuda no poder da regeneração muscular, possui alto valor biológico e  proteína de lenta absorção.",
+          "price": "R$110",
+          "discountedPrice": "R$100",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        {
+          "id": 10,
+          "name": "Pré workout Hórus Frutas vermelhas Max titanium",
+          "image":"/img/Products/PreWorkoutHorus.png" ,
+          "alt": "imagem do suplemento em pó de frutas vermelhas",
+          "description": "Os principais ingredientes do pré treino Hórus são: beta alanina e  arginina, ajudando no aumento da carnosina muscular. Este produto deve ser utilizado antes do exercício da atividade física. Este produto é contraindicado para gestantes, crianças, lactantes e hipertensos.",
+          "price": "R$170",
+          "discountedPrice": "R$140",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        {
+          "id": 11,
+          "name": "Pré workout huger bubblegum integral medica",
+          "image":"/img/Products/PreWorkoutHuger.png" ,
+          "alt": "imagem do suplemento em pó de chiclete",
+          "description": "Os benefícios do pré workout huger são: mais energia, vasodilatação, melhora da performance, aumento de força e foco.  os principais ingredientes consistem em: beta-alanina, cafeína, arginina, tirosina, taurina, colina.",
+          "price": "R$100",
+          "discountedPrice": "R$80",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        {
+          "id": 12,
+          "name": "Pré workout haze hardcore laranja growth supplements",
+          "image":"/img/Products/PreWorkoutHaze.png" ,
+          "alt": "imagem do suplemento em pó de laranja",
+          "description": "Este produto proporciona ao cliente: aumento de energia e disposição, aumenta o desempenho físico e melhora o desempenho para ganhar massa ou emagrecer. O pré workout haze hardcore possui 2g de beta-alanina, 1000mg de arginina, 1000mg de taurina e 250mg de tirosina.",
+          "price": "R$105",
+          "discountedPrice": "R$95",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        {
+          "id": 13,
+          "name": "3 níveis de faixa de resistência",
+          "image":"/img/Products/Resistance.png" ,
+          "alt": "imagem de faixas coloridas de resistência",
+          "description": "Estas faixas são as mais tecnológicas no mercado, é adequada para diversos tipos de exercícios físicos e pode ser utilizada por homens e mulheres além de ser fácil e simples de usar e transportar.",
+          "price": "R$35",
+          "discountedPrice": "R$25",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        {
+          "id": 14,
+          "name": "Tala strap",
+          "image":"/img/Products/Straps.png" ,
+          "alt": "imagem de amortecedor para as mãos",
+          "description": "Esta luva auxilia no levantamento do peso como a musculação ou outros exercícios físicos que implicam em movimentos de puxada. É indicado que o cliente lave as mãos antes e depois de fazer uso do produto.",
+          "price": "R$30",
+          "discountedPrice": "R$25",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        },
+        {
+          "id": 15,
+          "name": "Luva fitness OSP5",
+          "image":"/img/Products/PinkGloves.png" ,
+          "alt": "imagem de luvas para exercícios físicos rosa",
+          "description": "Este produto é perfeito para a prática de musculação e ciclismo, possui uma pegada firme e confortável, fazendo com que a palma da mão esteja completamente protegida, recomenda-se que o cliente lave as mãos antes e depois de utilizar o produto.",
+          "price": "R$30",
+          "discountedPrice": "R$25",
+          "buttonText": "Comprar",
+          "buttonLink": "."
+        }
+      ]
+}

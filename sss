@@ -1,0 +1,778 @@
+[33mcommit 7c8be83a9e5b30301c252b1dbbb4c087c39ad05e[m[33m ([m[1;36mHEAD -> [m[1;32mCssAlterations[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: db9350c 45ad9f3
+Author: ArthurMiguel53 <125491631+ArthurMiguel53@users.noreply.github.com>
+Date:   Thu Oct 26 21:14:24 2023 -0300
+
+    Merge pull request #13 from ArthurMiguel53/top-banner-feature
+    
+    Commit: Refatoração da Estrutura de Arquivos e Padrões de Margem
+
+[33mcommit db9350c112230b8ecee6de5d152122510ff31721[m
+Merge: 252dbbf 4e39c8e
+Author: ArthurMiguel53 <125491631+ArthurMiguel53@users.noreply.github.com>
+Date:   Thu Oct 26 21:14:05 2023 -0300
+
+    Merge pull request #14 from ArthurMiguel53/banner-carousel-feature
+    
+    Commit: Reorganização da Estrutura de Diretórios e Correção de Caminh…
+
+[33mcommit 4e39c8e8b693534b3f471b7e195dde8568a386a8[m[33m ([m[1;31morigin/banner-carousel-feature[m[33m)[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Wed Oct 11 15:28:14 2023 -0300
+
+    Commit: Reorganização da Estrutura de Diretórios e Correção de Caminhos de Importação
+    
+    Feito por: yDienifer
+    Data: 11/10/2023
+    
+    Resumo das Alterações:
+    
+    - Refatoração da estrutura de arquivos e pastas:
+      - Carousel.vue
+      - CarouselPanel
+    
+    - Nenhum arquivo adicionado.
+    
+    - Criação das seguintes pastas:
+      - 'types' (atualmente utilizada para armazenar as interfaces que estavam sendo exportadas)
+      - 'Carousel' (dentro da pasta 'types')
+    
+    Detalhes das Alterações:
+    
+    - No arquivo 'Carousel.vue' dentro da pasta 'src/components/Carousel/Carousel.vue':
+      - Excluída a pasta 'Interfaces' e adicionado o arquivo 'ProductInterface' na pasta 'types'.
+      - Alterado o caminho de importação da interface 'Product' de './interfaces/ProductInterface' para '../../types/Carousel/ProductInterface'.
+    
+    - No arquivo 'CarouselPanel.vue' dentro da pasta 'src/components/Carousel/CarouselPanel/CarouselPanel.vue':
+      - Alterado o caminho de importação da interface 'Product' de './interfaces/ProductInterface' para '../../../types/Carousel/ProductInterface'.
+
+[33mcommit 45ad9f3411f202496c429967fb663b15cebd281d[m[33m ([m[1;31morigin/top-banner-feature[m[33m)[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Wed Oct 11 15:06:06 2023 -0300
+
+    Commit: Refatoração da Estrutura de Arquivos e Padrões de Margem
+    
+    Feito por: yDienifer
+    Data: 11/10/2023
+    
+    Resumo das Alterações:
+    
+    - Refatoração da estrutura de arquivos e pastas:
+      - TopBanner.vue e styles.css
+      - main.css
+    
+    - Nenhum arquivo adicionado.
+    
+    - Nenhuma pasta criada.
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'TopBanner.vue' e 'styles.css' dentro da pasta 'src/components/TopBanner/TopBanner.vue':
+      - Adicionado o ID 'background-image-pc-1440px' que estava ausente no elemento 'background-image' em telas de 1440px.
+      - Padronizadas as margens dos banners com o valor de 0.5em em todos eles.
+      - Removido o 'margin-bottom' do elemento 'h1' e do elemento 'p', pois ambos têm margens padronizadas no arquivo 'main.css'.
+      - Definida a responsividade do elemento 'span' responsável por exibir o preço do produto.
+
+[33mcommit 252dbbf113630dbbbf4bdce638a90cd294fe2c34[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Wed Oct 11 11:12:16 2023 -0300
+
+    Resolução de Erro: Substituição de 'ShortcutsCategories' por 'Shortcuts'
+    
+    Feito por: yDienifer
+    Data: 11/10/2023
+    
+    Resumo das Alterações:
+    
+    - Refatoração da estrutura de arquivos e pastas:
+      - Navbar.vue e styles.css
+      - MenuHamburger.vue
+    
+    - Nenhum arquivo adicionado.
+    
+    - Nenhuma pasta criada.
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'Navbar.vue' e 'styles.css' dentro da pasta 'src/assets/layouts/Navbar/Navbar.vue':
+      - Resolvido o erro do componente 'ShortcutsCategories' não ser encontrado, trocando o nome 'ShortcutsCategories' por 'Shortcuts' e o caminho './Shortcuts/ShortcutsCategories.vue' por './Shortcuts/Shortcuts.vue'.
+      - Adicionado o z-index como 1 para fazer a navbar sobrepor os demais componentes da página.
+    
+    - No arquivo 'MenuHamburger.vue' dentro da pasta 'src/assets/layouts/Navbar/MenuHamburger/MenuHamburger.vue':
+      - Resolvido o erro do componente 'ShortcutsCategories' não ser encontrado, trocando o nome 'ShortcutsCategories' por 'Shortcuts' e o caminho './Shortcuts/ShortcutsCategories.vue' por './Shortcuts/Shortcuts.vue'.
+
+[33mcommit f2c0a430a8db742e9580a729d9bcdbfcf5bd6f70[m
+Merge: 9d2b4d5 9c30d50
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Tue Oct 10 17:15:10 2023 -0300
+
+    Merge pull request #10 from ArthurMiguel53/CssAlterations
+    
+    Commit: Alterações de estilos para animações.
+
+[33mcommit 9d2b4d55f51367ac058dc4a38f4cba321e79c62a[m
+Merge: 40385a5 27dca2f
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Thu Oct 5 15:31:32 2023 -0300
+
+    Merge pull request #12 from ArthurMiguel53/top-banner-feature
+    
+    Commit: Refatoração de Estilos no TopBanner
+
+[33mcommit 27dca2f0e977ce1d1b0ce8ba4eb9f32f47c9022a[m
+Merge: 223946f 40385a5
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Thu Oct 5 15:31:19 2023 -0300
+
+    Merge branch 'main' into top-banner-feature
+
+[33mcommit 223946f29f888d869f7695a529f2de1b0ff9820e[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Thu Oct 5 15:26:52 2023 -0300
+
+    Commit: Refatoração de Estilos no TopBanner
+    
+    Feito por: yDienifer
+    Data: 05/10/2023
+    
+    Resumo das Alterações:
+    
+    - Refatoração da estrutura de arquivos e pastas
+      - ShortcutsCategories.vue > Shortcuts.vue
+      - TopBanner.vue e styles.css
+    
+    - Nenhum arquivo criado.
+    
+    - Nenhuma pasta criada.
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'TopBanner.vue' e 'styles.css' dentro da pasta 'src/components/TopBanner':
+      - Adicionado o ID 'product-image' à tag 'img' que contém a imagem do produto, para facilitar a utilização com a biblioteca gsap.
+      - Aplicadas animações usando a biblioteca gsap em elementos HTML específicos, como no fundo de decoração onde a imagem de demonstração do produto está localizada, bem como no próprio elemento da imagem do produto.
+      - Removido o uso de 'clip-path' em dispositivos com largura de 425px.
+      - Adicionado 'text-align: center' ao elemento <p>, que contém a descrição do produto, em telas com largura de 425px.
+
+[33mcommit 40385a5d2a97b3fcb04da6ef242607a9523ef5cd[m
+Merge: 1fe7e84 6989e7f
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Thu Oct 5 15:20:43 2023 -0300
+
+    Merge pull request #11 from ArthurMiguel53/banner-carousel-feature
+    
+    Commit: Refatoração da Estrutura e Animações no Carousel, Adição de A…
+
+[33mcommit 6989e7f6bb3d442fe9d2d41b6594d1257ce1e7fc[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Thu Oct 5 15:16:28 2023 -0300
+
+    Commit: Refatoração da Estrutura e Animações no Carousel, Adição de Arquivo JSON de Produtos
+    
+    Feito por: yDienifer
+    Data: 05/10/2023
+    
+    Resumo das Alterações:
+    
+    - Refatoração da estrutura de arquivos e pastas
+      - styles.css de Carousel.vue
+      - styles.css do CarouselPanel.vue
+    
+    - Adicionados os seguintes arquivos:
+      - CarouselBannerProducts.json
+    
+    - Nenhuma pasta criada.
+    
+    Detalhes das Alterações:
+    
+    - No arquivo 'styles.css' em 'src/components/Carousel/styles.css':
+      - Modificada a posição da classe 'carousel-controls-container' para o topo da tela (top: 90%) e centralizada horizontalmente (left: 50%) usando a propriedade 'transform' com 'translateX(-50%)' em telas com largura máxima de 425px, através de uma media query.
+    
+    - No arquivo 'styles.css' em 'src/components/Carousel/CarouselPanel/styles.css':
+      - A classe 'carousel-controls-container' foi definida para ser exibida como flexível (display: flex) e para ocupar toda a largura (width: 100%) em telas com largura máxima de 425px, por meio de uma media query.
+    
+    - No arquivo 'CarouselBannerProducts.json' em 'src/assets/json/CarouselBannerProducts.json':
+      - Adicionados três novos produtos, cada um com sua própria descrição, preço e opção de compra. Também foram incluídas imagens promocionais em diferentes resoluções para melhorar a exibição dos produtos.
+
+[33mcommit 1fe7e84cdf021f8810911b3d4b2189de42b1b268[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Thu Oct 5 15:07:11 2023 -0300
+
+    Commit: Refatoração da Estrutura e Animações no Carousel, Adição de Arquivo JSON de Produtos
+    
+    Feito por: yDienifer
+    Data: 05/10/2023
+    
+    Resumo das Alterações:
+    
+    - Refatoração da estrutura de arquivos e pastas
+      - ShortcutsCategories.vue > Shortcuts.vue
+      - styles.css de Carousel.vue
+      - TopBanner.vue e styles.css
+      - styles.css do Home.vue
+      - styles.css do CarouselPanel.vue
+    
+    - Adicionados os seguintes arquivos:
+      - CarouselBannerProducts.json
+    
+    - Nenhuma pasta criada.
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'TopBanner.vue' e 'styles.css' dentro da pasta 'src/components/Carousel':
+      - Adicionado o ID 'product-image' à tag 'img' que contém a imagem do produto, para facilitar a utilização com a biblioteca gsap.
+      - Aplicadas animações usando a biblioteca gsap em elementos HTML específicos, como no fundo de decoração onde a imagem de demonstração do produto está localizada, bem como no próprio elemento da imagem do produto.
+      - Removido o uso de 'clip-path' em dispositivos com largura de 425px.
+      - Adicionado 'text-align: center' ao elemento <p>, que contém a descrição do produto, em telas com largura de 425px.
+    
+    - No arquivo 'styles.css' em 'src/components/Carousel/styles.css':
+      - Modificada a posição da classe 'carousel-controls-container' para o topo da tela (top: 90%) e centralizada horizontalmente (left: 50%) usando a propriedade 'transform' com 'translateX(-50%)' em telas com largura máxima de 425px, através de uma media query.
+    
+    - No arquivo 'styles.css' em 'src/components/Carousel/CarouselPanel/styles.css':
+      - A classe 'carousel-controls-container' foi definida para ser exibida como flexível (display: flex) e para ocupar toda a largura (width: 100%) em telas com largura máxima de 425px, por meio de uma media query.
+    
+    - No arquivo 'CarouselBannerProducts.json' em 'src/assets/json/CarouselBannerProducts.json':
+      - Adicionados três novos produtos, cada um com sua própria descrição, preço e opção de compra. Também foram incluídas imagens promocionais em diferentes resoluções para melhorar a exibição dos produtos.
+
+[33mcommit 7d8b8422e9bdd992fa3fecd4d59520e0d8d64de3[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Wed Oct 4 21:34:46 2023 -0300
+
+    Commit: Refatoração da Estrutura de Arquivos e Pastas e Configuração do Vue Router
+    
+    Feito por: yDienifer
+    Data: 04/10/2023
+    
+    Resumo das Alterações:
+    
+    - Refatoração da estrutura de arquivos e pastas
+      - index.ts
+      - main.css
+      - App.vue
+      - img (pasta)
+    
+    - Adicionados os seguintes arquivos:
+      - Home.vue e styles.css
+    
+    - Criação das seguintes pastas:
+      - 'views'
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'Home.vue' e 'styles.css' dentro da pasta 'src/views/Home':
+      - Importação de um componente de Navbar e de um Carousel.
+      - Renderização de dados de produtos do carrossel a partir de um arquivo JSON chamado 'CarouselBannerProducts.json'.
+    
+    - No arquivo 'index.ts' dentro da pasta 'src/router/index.ts':
+      - Configuração de um sistema de roteamento Vue usando o Vue Router.
+      - Criação de um router com a função 'createRouter' que utiliza o histórico da web como método de histórico.
+      - Definição da rota raiz '/' para direcionar ao componente 'Home' usando lazy loading através da função 'import'.
+    
+    - No arquivo 'main.css' dentro da pasta 'src/router/index.ts':
+      - Definição de fonte e tamanho de texto para 'p' e 'span'.
+      - Importação de fontes do Google Fonts, incluindo 'Exo 2', 'Exo' (com peso 700) e 'Noto Sans Georgian' (com peso 200).
+      - Adição de responsividade para 'h1', 'p' e 'span' usando a função 'clamp'.
+    
+    - No arquivo 'App.vue' dentro da pasta 'src/App.vue':
+      - Remoção da importação do componente Navbar.
+      - Adição do Router view dentro do template.
+      - Script vazio, que não contém lógica ou dados específicos para o componente.
+    
+    - Na pasta 'public/img':
+      - Adição de fotos dos produtos e de pessoas fazendo propaganda dos respectivos produtos, que foram colocadas no 'TopBanner'.
+      - As fotos das pessoas modelo de propaganda foram inicialmente adicionadas em duas resoluções, uma para telas de 1440px e outra para telas de 1024px.
+
+[33mcommit 9c30d50f036fd773125a4b9cd00f29a53f37a87f[m[33m ([m[1;31morigin/CssAlterations[m[33m)[m
+Author: ArthurMiguel53 <arthurprofissional5348@gmail.com>
+Date:   Wed Oct 4 20:59:11 2023 -0300
+
+    alterações de estilos para animações.
+
+[33mcommit 6fbafc4d4a2f177dafc2a0cb8e2eb2fead90a87b[m[33m ([m[1;32mMenuHamburguer[m[33m)[m
+Merge: 604ce07 e738c5e
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Wed Oct 4 15:57:25 2023 -0300
+
+    Merge pull request #6 from ArthurMiguel53/MenuHamburguer
+    
+    Algumas alterações no CSS, criação do Menu Hambuerguer
+
+[33mcommit 604ce07dc47d8f8ff745dbfee55b7059d52e783e[m
+Merge: 95e008b 08cd814
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Tue Oct 3 17:52:56 2023 -0300
+
+    Merge pull request #9 from ArthurMiguel53/banner-carousel-feature
+    
+    Commit: Adição do Componente de Banner de Carrossel e Estilização
+
+[33mcommit 08cd814d6a7a8e50904e750e50b4cbcf698bc898[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Tue Oct 3 17:43:03 2023 -0300
+
+    Feito por: yDienifer
+    Data: 03/10/2023
+    
+    Commit: Adição do Componente de Banner de Carrossel e Estilização
+    
+    Resumo das Alterações:
+    - Refatoração da estrutura de arquivos:
+      - Adicionados os seguintes arquivos:
+        - Carousel.vue e styles.css
+        - CarouselPanel.vue e styles.css
+        - ProductInterface.ts
+      - Criadas as seguintes pastas:
+        - Carousel
+        - CarouselPanel
+        - interfaces
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'Carousel.vue' e 'styles.css' dentro da pasta 'src/components/Carousel':
+      - Adicionado um container de carrossel no arquivo de template.
+      - Implementado um loop para iterar pelos produtos e exibir o componente 'TopBanner' apenas para o produto correspondente ao 'currentSlideIndex'.
+      - O componente 'TopBanner' agora recebe informações do produto como propriedades.
+      - Adicionado um container de controles do carrossel com o componente 'CarouselPanel' para exibir detalhes dos produtos e permitir a interação com o carrossel.
+      - Importados os componentes 'TopBanner' e 'CarouselPanel' e definido o componente 'Carousel' com props 'products' e o estado 'currentSlideIndex'.
+      - Implementado o método 'exchangeBannerInfo' para atualizar o 'currentSlideIndex' com o índice do produto selecionado pelos controles do carrossel.
+      - Estilização do componente completa.
+    
+    - Nos arquivos 'CarouselPanel.vue' e 'styles.css' dentro da pasta 'src/components/Carousel/CarouselPanel':
+      - Adicionado 'productDetails' como uma prop que contém informações sobre os produtos a serem exibidos no carrossel.
+      - Implementado um loop que itera pelos produtos em 'productDetails' e exibe uma imagem de cada produto. Cada imagem é clicável e chama o método 'clickedControlProductIndex' ao ser clicada.
+      - Adicionado uma prop 'currentProductId' que representa o ID do produto atualmente em exibição.
+      - Implementado o método 'clickedControlProductIndex' que emite um evento 'clickedControlProductIndex' com o índice do produto clicado.
+      - Estilos de componente concluídos.
+    
+    - No arquivo 'ProductInterface.ts' dentro da pasta 'src/components/Carousel/interfaces':
+      - Definidas propriedades para representar informações de um produto, como imagem, título, descrição, preço, etc.
+
+[33mcommit 95e008b27ae8bd7b264ab3ec962e0be6c5b25dfb[m
+Merge: 0207c0f c824cb7
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Tue Oct 3 17:44:41 2023 -0300
+
+    Merge pull request #8 from ArthurMiguel53/banner-carousel-feature
+    
+    Commit: Adição do Componente de Banner de Carrossel e Estilização
+
+[33mcommit c824cb74fad374dd4f1df91e1db7fa605ffb8334[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Tue Oct 3 17:43:03 2023 -0300
+
+    Feito por: yDienifer
+    Data: 03/10/2023
+    
+    Commit: Adição do Componente de Banner de Carrossel e Estilização
+    
+    Resumo das Alterações:
+    - Refatoração da estrutura de arquivos:
+      - Adicionados os seguintes arquivos:
+        - Carousel.vue
+        - styles.css
+        - CarouselPanel.vue
+        - styles.css
+        - ProductInterface.ts
+      - Criadas as seguintes pastas:
+        - Carousel
+        - CarouselPanel
+        - interfaces
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'Carousel.vue' e 'styles.css' dentro da pasta 'src/components/Carousel':
+      - Adicionado um container de carrossel no arquivo de template.
+      - Implementado um loop para iterar pelos produtos e exibir o componente 'TopBanner' apenas para o produto correspondente ao 'currentSlideIndex'.
+      - O componente 'TopBanner' agora recebe informações do produto como propriedades.
+      - Adicionado um container de controles do carrossel com o componente 'CarouselPanel' para exibir detalhes dos produtos e permitir a interação com o carrossel.
+      - Importados os componentes 'TopBanner' e 'CarouselPanel' e definido o componente 'Carousel' com props 'products' e o estado 'currentSlideIndex'.
+      - Implementado o método 'exchangeBannerInfo' para atualizar o 'currentSlideIndex' com o índice do produto selecionado pelos controles do carrossel.
+      - Estilização do componente completa.
+    
+    - Nos arquivos 'CarouselPanel.vue' e 'styles.css' dentro da pasta 'src/components/Carousel/CarouselPanel':
+      - Adicionado 'productDetails' como uma prop que contém informações sobre os produtos a serem exibidos no carrossel.
+      - Implementado um loop que itera pelos produtos em 'productDetails' e exibe uma imagem de cada produto. Cada imagem é clicável e chama o método 'clickedControlProductIndex' ao ser clicada.
+      - Adicionado uma prop 'currentProductId' que representa o ID do produto atualmente em exibição.
+      - Implementado o método 'clickedControlProductIndex' que emite um evento 'clickedControlProductIndex' com o índice do produto clicado.
+      - Estilos de componente concluídos.
+    
+    - No arquivo 'ProductInterface.ts' dentro da pasta 'src/components/Carousel/interfaces':
+      - Definidas propriedades para representar informações de um produto, como imagem, título, descrição, preço, etc.
+
+[33mcommit 0207c0ff045c9d1efea12f37fd1cc5155ee44889[m
+Merge: 11c9f73 d4aab55
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Tue Oct 3 17:05:37 2023 -0300
+
+    Merge pull request #7 from ArthurMiguel53/top-banner-feature
+    
+    Top banner feature
+
+[33mcommit d4aab55b51bb221d58f4904f9d8f3d0448ced0ab[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Tue Oct 3 17:03:11 2023 -0300
+
+    Feito por: yDienifer
+    Data: 03/10/2023
+    
+    Commit: Adições e Estilização do Componente de Banner
+    
+    Resumo das Alterações:
+    - Refatoração da estrutura de arquivos:
+      - Adicionados os seguintes arquivos:
+        - TopBanner.vue
+        - styles.css
+      - Criadas as seguintes pastas:
+        - TopBanner
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'TopBanner.vue' e 'styles.css' dentro da pasta 'Navbar':
+      - Implementado um componente chamado 'TopBanner' para exibir informações sobre um produto, incluindo imagem, título, descrição, preço e um botão de ação.
+      - Adicionadas duas imagens de fundo com gradientes lineares para diferentes tamanhos de tela.
+      - Passagem de informações do produto, URLs das imagens e texto para o botão de ação via props.
+      - Importação e utilização do componente 'ActionButton'.
+      - Estilização das imagens no banner, com limitação de largura e margens definidas.
+      - Ajuste de estilos para diferentes tamanhos de tela, incluindo configuração das imagens de fundo.
+      - Banner configurado para exibição responsiva em dispositivos variados.
+
+[33mcommit e738c5e00099d7f52a80dd0e77464f7a8da9064c[m[33m ([m[1;31morigin/MenuHamburguer[m[33m)[m
+Author: ArthurMiguel53 <arthurprofissional5348@gmail.com>
+Date:   Mon Oct 2 12:30:32 2023 -0300
+
+    Algumas alterações no CSS, criação do Menu Hambuerguer
+
+[33mcommit 11c9f73ccd7b6a84c607f391d3ed2b282b567799[m[33m ([m[1;32mmain[m[33m)[m
+Merge: b890229 02f4c78
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Sat Sep 30 16:31:54 2023 -0300
+
+    Merge pull request #5 from ArthurMiguel53/NavBar
+    
+    Commit: Atualizações na Barra de Navegação e Estilos
+
+[33mcommit f95ddf7a4f25bcbce9ba162811c07d85e4edb2de[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Sat Sep 30 16:16:36 2023 -0300
+
+    Feito por: yDienifer
+    Data: 30/09/2023
+    
+    Commit: Atualizações na Barra de Navegação e Estilos
+    
+    Resumo das Alterações:
+    - Refatoração da estrutura de arquivos:
+      - Navbar.vue
+      - NavbarShortcuts.json
+      - Shortcuts.vue
+      - color-palette.css
+      - main.css
+    
+    - Adicionados os seguintes arquivos:
+      - MenuHamburger.vue
+    
+    - Criadas as seguintes pastas:
+      - MenuHamburger
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'Navbar.vue' e 'styles.css' dentro da pasta 'Navbar':
+      - Importado o componente 'MenuHamburger'.
+      - Realizados ajustes na responsividade, ocultando os ícones de conta, carrinho e lupa em telas com resolução igual ou inferior a 768px.
+    
+    - No arquivo 'NavbarShortcuts.json' dentro da pasta 'json':
+      - Efetuadas modificações no arquivo NavbarShortcuts.json, incluindo o campo dropdown para armazenar os nomes dos itens, que representam as categorias.
+    
+    - No arquivo 'Shortcuts.vue' dentro da pasta 'Shortcuts':
+      - Importado o 'FontAwesomeIcon' para adicionar os ícones, que incluem 'faChevronDown' e 'faChevronUp', representando o estado atual do dropdown.
+      - No bloco 'computed', criada a função 'hasDropdown()', que verifica a presença de um dropdown.
+      - No bloco 'methods', implementada a função 'toggleDropdown()', que controla a lógica de abrir e fechar o dropdown, alternando o ícone para 'faChevronUp' quando aberto e 'faChevronDown' quando fechado.
+      - Realizados alguns ajustes na responsividade, com a possibilidade de modificações adicionais.
+    
+    - No arquivo 'color-palette.css' dentro da pasta 'styles':
+      - Alterados os nomes das variáveis que armazenavam as cores.
+    
+    - No arquivo 'main.css' dentro da pasta 'styles':
+      - Adicionado o seletor 'body::before' com algumas propriedades para escurecer o plano de fundo (background-image) presente no 'body'.
+      - Modificado o valor da propriedade 'color' do 'body' para 'var(--pale-aqua-color)'.
+
+[33mcommit 02f4c78dc9eee0c7da9d6a239857d5a35a429e4c[m[33m ([m[1;31morigin/NavBar[m[33m)[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Sat Sep 30 16:16:36 2023 -0300
+
+    Feito por: yDienifer
+    Data: 30/09/2023
+    
+    Resumo das Alterações:
+    - Refatoração da estrutura de arquivos:
+      - Navbar.vue
+      - NavbarShortcuts.json
+      - Shortcuts.vue
+      - color-palette.css
+      - main.css
+    
+    - Adicionados os seguintes arquivos:
+      - MenuHamburger.vue
+    
+    - Criadas as seguintes pastas:
+      - MenuHamburger
+    
+    Detalhes das Alterações:
+    
+    - Nos arquivos 'Navbar.vue' e 'styles.css' dentro da pasta 'Navbar':
+      - Importado o componente 'MenuHamburger'.
+      - Realizados ajustes na responsividade, ocultando os ícones de conta, carrinho e lupa em telas com resolução igual ou inferior a 768px.
+    
+    - No arquivo 'NavbarShortcuts.json' dentro da pasta 'json':
+      - Efetuadas modificações no arquivo NavbarShortcuts.json, incluindo o campo dropdown para armazenar os nomes dos itens, que representam as categorias.
+    
+    - No arquivo 'Shortcuts.vue' dentro da pasta 'Shortcuts':
+      - Importado o 'FontAwesomeIcon' para adicionar os ícones, que incluem 'faChevronDown' e 'faChevronUp', representando o estado atual do dropdown.
+      - No bloco 'computed', criada a função 'hasDropdown()', que verifica a presença de um dropdown.
+      - No bloco 'methods', implementada a função 'toggleDropdown()', que controla a lógica de abrir e fechar o dropdown, alternando o ícone para 'faChevronUp' quando aberto e 'faChevronDown' quando fechado.
+      - Realizados alguns ajustes na responsividade, com a possibilidade de modificações adicionais.
+    
+    - No arquivo 'color-palette.css' dentro da pasta 'styles':
+      - Alterados os nomes das variáveis que armazenavam as cores.
+    
+    - No arquivo 'main.css' dentro da pasta 'styles':
+      - Adicionado o seletor 'body::before' com algumas propriedades para escurecer o plano de fundo (background-image) presente no 'body'.
+      - Modificado o valor da propriedade 'color' do 'body' para 'var(--pale-aqua-color)'.
+
+[33mcommit b8902290be9fc242c22304725003edef3c85ce82[m
+Merge: 473b5e4 17a00ba
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Fri Sep 29 18:18:56 2023 -0300
+
+    Merge pull request #4 from ArthurMiguel53/NavBar
+    
+    Commit: Refatoração da Estrutura de Componentes e Estilos
+
+[33mcommit 17a00bad09767a1422dd64de6d73175e07e7493f[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Fri Sep 29 18:11:52 2023 -0300
+
+    Commit: Refatoração da Estrutura de Componentes e Estilos
+    
+    Feito por: yDienifer
+    Data: 29/09/2023
+    
+    Resumo das Alterações:
+    - Refatoração da estrutura de arquivos:
+      - App.vue
+      - BrandLogo.vue
+      - styles.css
+      - main.css
+      - tsconfig.json
+    
+    - Adicionados os seguintes arquivos:
+      - scattered-forcefields.png
+      - NavbarShortcuts.json
+      - Navbar.vue
+      - Shortcuts.vue
+      - styles.css
+    
+    - Criadas as seguintes pastas:
+      - img
+      - json
+      - layouts
+      - Navbar
+      - Shortcuts
+      - ActionButton
+    
+    Detalhes das Alterações:
+    - No arquivo 'App.vue':
+      - Refatoração da estrutura para transferir a criação da navbar para o novo componente 'Navbar.vue'.
+      - Importação do componente 'Navbar.vue'.
+    
+    - Nos arquivos 'BrandLogo.vue' e 'styles.css' dentro da pasta 'ProductCard':
+      - Remoção do TweenMax das importações do 'gsap'.
+    
+    - Na pasta 'img':
+      - Adição da imagem 'scattered-forcefields.png', que serve background-image do body da página.
+    
+    - Nos arquivos 'Shortcuts.vue' e 'styles.css' dentro da pasta 'Shortcuts':
+      - Criação de um componente de atalho com props para personalizar o título do atalho e o link de redirecionamento.
+      - Conclusão da estilização com 90% da responsividade implementada.
+    
+    - No arquivo 'NavbarShortcuts.json' dentro da pasta 'json':
+      - Adição das informações de id, nome e link dos atalhos usados na navbar.
+    
+    - Nos arquivos 'Navbar.vue' e 'styles.css' dentro da pasta 'Navbar':
+      - Importação do componente BrandLogo e sua inclusão na navbar.
+      - Importação dos atalhos do componente Shortcuts e renderização com base no arquivo 'NavbarShortcuts.json'.
+      - Substituição das imagens 'cart.png', 'login.png' e 'lupa.png' pelos icons do 'Font Awesome Free'.
+      - Alteração da cor de fundo da navbar e da borda.
+      - Redução da largura da navbar para 95%, centralizando-a na página.
+      - Simplificação e otimização do código CSS.
+      - Substituição de seletores '#categories' e '#icons' por '.categories' e '.icons'.
+    
+    - No arquivo 'main.css':
+      - Importação da fonte 'Lato' e aplicação dela ao body da página.
+      - Adição da imagem 'scattered-forcefields.png' no background-image do body, em adição de propriedades como background-size e background-position.
+    
+    - No arquivo 'tsconfig.json':
+      - Adição da opção 'resolveJsonModule' com valor 'true' nas 'compilerOptions'.
+
+[33mcommit 473b5e4bf718173cd3f5300fecfd392cb1850f38[m
+Merge: bf8851b eda77c1
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Fri Sep 29 17:19:20 2023 -0300
+
+    Merge pull request #3 from ArthurMiguel53/product-card-feature
+    
+    Commit: Adição do Componente ProductCard e Botão de Ação
+
+[33mcommit eda77c1ab0b3ab7926d5ce1d67ebffb424266a2e[m[33m ([m[1;31morigin/product-card-feature[m[33m)[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Fri Sep 29 17:16:19 2023 -0300
+
+    Commit: Adição do Componente ProductCard e Botão de Ação
+    
+    Feito por: yDienifer
+    Data: 29/09/2023
+    
+    Resumo das Alterações:
+    - Adicionados os seguintes arquivos:
+      - ProductCard.vue
+      - ActionButton.vue
+      - styles.css
+    
+    - Criadas as seguintes pastas:
+      - ProductCard
+      - ActionButton
+    
+    Detalhes das Alterações:
+    - No arquivo 'ProductCard.vue' e 'styles.css' dentro da pasta 'ProductCard':
+      - Implementado o componente de card de produtos.
+      - Utilizadas props para personalizar a imagem do produto, nome, preço (e desconto, quando aplicável), descrição e link/título do botão de ação.
+      - Estilização e responsividade concluídas, sujeitas a ajustes conforme necessário.
+    
+    - No arquivo 'ActionButton.vue' e 'style.css' dentro da pasta 'ActionButton':
+      - Criado o componente de botão de ação com props para definir o link (com router-link) e o texto do botão.
+      - Estilização e responsividade concluídas, sujeitas a ajustes conforme necessário.
+
+[33mcommit bf8851b2878c57b00c886f969c154c42fc42afba[m
+Merge: d72dd0a 3e76fff
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Fri Sep 29 02:14:55 2023 -0300
+
+    Merge pull request #2 from ArthurMiguel53/NavBar
+    
+    Nav bar
+
+[33mcommit 3e76fffd2b202628844c30417365cc4282a75e18[m
+Author: ArthurMiguel53 <arthurprofissional5348@gmail.com>
+Date:   Thu Sep 28 21:40:18 2023 -0300
+
+    initializating from navbar HTML
+
+[33mcommit b2c0ca26e3d82f96a45f49126257c8f8697b092e[m
+Author: ArthurMiguel53 <arthurprofissional5348@gmail.com>
+Date:   Thu Sep 28 13:51:35 2023 -0300
+
+    finalização inicial da navbar
+
+[33mcommit d72dd0a188fe1bfd3433fd6ef4dc06c54bf5a1ca[m
+Merge: bd8d2e4 33eaeca
+Author: Diênifer <108842368+yDienifer@users.noreply.github.com>
+Date:   Wed Sep 27 17:50:29 2023 -0300
+
+    Merge pull request #1 from ArthurMiguel53/logo-feature
+    
+    Adicionar logo
+
+[33mcommit 33eaeca0668f79af0edb4fcc895cc327adc71e66[m[33m ([m[1;31morigin/logo-feature[m[33m)[m
+Merge: 7e6f09e 0221734
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Wed Sep 27 17:45:48 2023 -0300
+
+    Merge branch 'logo-feature' from remote repository.
+    
+    Merging changes from the remote branch 'logo-feature' into the local 'logo-feature' branch to incorporate the latest updates.
+
+[33mcommit 7e6f09e02b369aa568ea911f8369c94ad58cd4c3[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Wed Sep 27 17:02:55 2023 -0300
+
+    Commit: Adição do Componente BrandLogo e Estilos
+    
+    Feito por: yDienifer
+    Data: 27/09/2023
+    
+    Resumo das Alterações:
+    - Criei os seguintes arquivos:
+      - BrandLogo.vue
+      - styles.css
+      - main.css
+      - colorPallete.css
+    - Criei as seguintes pastas:
+      - assets
+      - styles
+      - fonts
+    
+    Detalhes das Alterações:
+    - No arquivo 'BrandLogo.vue' dentro da pasta 'BrandLogo':
+      - Criei o componente da logo do website.
+      - Utilizei 'gsap' para criar a animação do icon e span.
+      - Utilizei TypeScript para adicionar tipagem às variáveis.
+      - Instalei o FontAwesome para adicionar o ícone da logo.
+      - Instalei o GSAP para fazer a animação.
+    
+    - No arquivo 'style.css':
+      - Estilizei o componente 'BrandLogo'.
+      - Defini as cores de '.highlighted-letter' e '#brand-logo-icon' usando as cores root definidas no arquivo 'colorPalette.css'.
+      - Implementei a responsividade da fonte da logo e do ícone usando a propriedade 'clamp()'.
+    
+    - No arquivo 'color-palette.css':
+      - Adicionei a paleta de cores do site, que consiste em um total de 4 cores.
+    
+    - No arquivo 'main.ts'
+      - Fiz a importação do arquivo "main.css" para definir estilos globais.
+
+[33mcommit 022173499ea449789d265309a799e09c7e618108[m
+Author: Diênifer <dienifersiqueira.dev@gmail.com>
+Date:   Wed Sep 27 17:02:55 2023 -0300
+
+    Commit: Adição do Componente BrandLogo e Estilos
+    
+    Feito por: yDienifer
+    Data: 27/09/2023
+    
+    Resumo das Alterações:
+    - Criei os seguintes arquivos:
+      - BrandLogo.vue
+      - styles.css
+      - base.css
+      - colorPallete.css
+    - Criei as seguintes pastas:
+      - assets
+      - styles
+      - fonts
+    
+    Detalhes das Alterações:
+    - No arquivo 'BrandLogo.vue' dentro da pasta 'BrandLogo':
+      - Criei o componente da logo do website.
+      - Utilizei 'gsap' para criar a animação.
+      - Utilizei TypeScript para adicionar tipagem às variáveis.
+      - Instalei o FontAwesome para adicionar o ícone da logo.
+      - Utilizei o GSAP para fazer a animação.
+    
+    - No arquivo 'style.css':
+      - Estilizei o componente 'BrandLogo'.
+      - Defini as cores de '.highlighted-letter' e '#brand-logo-icon' usando as cores root definidas no arquivo 'colorPalette.css'.
+      - Implementei a responsividade da fonte da logo e do ícone usando a propriedade 'clamp()'.
+    
+    - No arquivo 'color-palette.css':
+      - Adicionei a paleta de cores do site, que consiste em um total de 4 cores.
+
+[33mcommit bd8d2e4b9fbf5d88c5205983a4918742e2b2f7b2[m
+Author: ArthurMiguel53 <arthurprofissional5348@gmail.com>
+Date:   Wed Sep 27 06:33:44 2023 -0300
+
+    algumas alterações iniciais no project
+
+[33mcommit eaf3c017a95c8650e91159bc6e9b4363f8c29466[m
+Author: ArthurMiguel53 <arthurprofissional5348@gmail.com>
+Date:   Wed Sep 27 05:47:58 2023 -0300
+
+    init
