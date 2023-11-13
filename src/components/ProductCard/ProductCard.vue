@@ -57,6 +57,7 @@ export default defineComponent({
         ButtonLink: {
             type: String,
             required: true
+            //até termos o link
         },
         ButtonText: {
             type: String,
