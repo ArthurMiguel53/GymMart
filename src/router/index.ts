@@ -8,6 +8,11 @@ const router = createRouter({
       name: 'home',
       component: () => import('@/views/Home/Home.vue'),
     },
+    {
+      path: '/redefine-password-page',
+      name: 'redefine-password-page',
+      component: () => import('@/views/RedefinePassword/RedefinePasswordPage.vue'),
+    },
   ]
 })
 

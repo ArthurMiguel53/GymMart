@@ -1,0 +1,34 @@
+{
+    "categoryArray": [
+        {
+            "id": 1,
+            "useRouterLink": true,
+            "listItemUrl": "/ganho-de-massa",
+            "listItemText": "Ganho de Massa"
+        },
+        {
+            "id": 2,
+            "useRouterLink": true,
+            "listItemUrl": "/perda-de-gordura",
+            "listItemText": "Perda de Gordura"
+        },
+        {
+            "id": 3,
+            "useRouterLink": true,
+            "listItemUrl": "/pre-treinos",
+            "listItemText": "Pré Treinos"
+        },
+        {
+            "id": 4,
+            "useRouterLink": true,
+            "listItemUrl": "/suplementos",
+            "listItemText": "Suplementos"
+        },
+        {
+            "id": 5,
+            "useRouterLink": true,
+            "listItemUrl": "/acessorios",
+            "listItemText": "Acessórios"
+        }
+    ]
+}

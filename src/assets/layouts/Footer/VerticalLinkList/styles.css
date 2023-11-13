@@ -1,0 +1,7 @@
+.vertical-link-list-container li:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.vertical-link-list-container li {
+    margin-top: var(--spacing-vertical);
+}
