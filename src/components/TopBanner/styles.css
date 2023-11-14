@@ -39,6 +39,7 @@
     overflow: hidden;
     text-align: left;
     text-overflow: ellipsis;
+    margin-bottom: 25px;
 }
 
 .banner-information #product-price {
@@ -141,5 +142,9 @@
     .banner-information h1,
     .banner-information p {
         text-align: center;
+    }
+
+    .banner-information h1 {
+        margin-top: var(--spacing-vertical);
     }
 }
