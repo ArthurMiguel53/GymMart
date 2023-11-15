@@ -148,12 +148,12 @@ export default defineComponent({
     },
     setup() {
         const mostrarFormularioCriarConta = ref(false);
-        const userNameInputValue = ref("");
-        const userSurnameInputValue = ref("");
-        const userEmailInputValue = ref("");
-        const userPasswordValue = ref("");
-        const userConfirmPasswordValue = ref("");
-        const passwordInputType = ref('password');
+        const userNameInputValue = ref<string>("");
+        const userSurnameInputValue = ref<string>("");
+        const userEmailInputValue = ref<string>("");
+        const userPasswordValue = ref<string>("");
+        const userConfirmPasswordValue = ref<string>("");
+        const passwordInputType = ref<string>('password');
         const isPasswordHidden = ref(true);
 
         const togglePasswordVisibility = () => {
@@ -166,7 +166,7 @@ export default defineComponent({
                 const newValue = event.target.value;
 
                 if (/[\d\s]/.test(newValue)) {
-                    alert('Por favor, não digite números e nem espaços. Caso você tenha dois nomes, digite apenas o primeiro. Obrigado!');
+                    alert('Por favor, evite digitar números e espaços. Se houver dois nomes, digite apenas o primeiro. Agradecemos!');
                     event.target.value = '';
                 } else {
                     userNameInputValue.value = newValue;
@@ -179,7 +179,7 @@ export default defineComponent({
                 const newValue = event.target.value;
 
                 if (/[\d]/.test(newValue)) {
-                    alert('Por favor, não digite números no campo de sobrenome. Obrigado.');
+                    alert('Por favor, evite inserir números no campo de sobrenome. Agradecemos!');
                     event.target.value = '';
                 } else {
                     userSurnameInputValue.value = newValue;
@@ -211,13 +211,6 @@ export default defineComponent({
             }
         }
 
-        const userData = {
-            user_name: userNameInputValue.value,
-            user_surname: userSurnameInputValue.value,
-            user_email: userEmailInputValue.value,
-            user_password: userPasswordValue.value,
-        };
-
         const sendDataToAPI = () => {
             const userData = {
                 user_name: userNameInputValue.value,
@@ -225,7 +218,6 @@ export default defineComponent({
                 user_email: userEmailInputValue.value,
                 user_password: userPasswordValue.value,
             };
-            console.log("Dados do usuário a serem enviados para a API:", userData);
             axios.post('http://localhost:8000/user-authentication/', userData)
                 .then(response => {
                     console.log(response.data);
